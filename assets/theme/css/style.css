@@ -1,0 +1,250 @@
+@import url(//fonts.googleapis.com/earlyaccess/notokufiarabic.css);
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Noto Kufi Arabic', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    font-size: 10px;
+    direction: rtl;
+}
+
+section {
+    margin: 6rem 0;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../images/header.jpeg");
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.header__div {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header__span {
+    display: block;
+    padding: 1rem;
+    color: white;
+}
+
+.header__span--main {
+    font-size: 8rem;
+    animation: moveInRight .5s ease-in;
+}
+
+.header__span--secondary {
+    font-size: 6rem;
+    animation: moveInLeft .5s ease-in;
+}
+
+.header__btn:link, .header__btn:visited {
+    margin-top: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: relative;
+    font-size: 4rem;
+}
+
+.header__btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,.2);
+}
+
+.header__btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+.header__btn--white {
+    background-color: white;
+    color: #777;
+}
+
+.header__btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.header__btn--white::after {
+    background-color: #fff;
+    color: #777;
+}
+
+.header__btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.header__btn--animated {
+    animation: moveInBottom .5s ease-in .75s;
+    animation-fill-mode: backwards;
+}
+
+.active__userchoice {
+    border: 5px #66b05c solid;
+}
+
+@keyframes moveInBottom {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        transform: translateX(300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes moveInLeft {
+    0% {
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#myVideo {
+    min-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+   modifications to bootstrap css
+*/
+.card-body {
+    padding: .5rem !important;
+}
+
+.cardSet1 {
+    background-color: #669999 !important;
+}
+
+.cardSet2 {
+    background-color: #cc6666 !important;
+}
+
+.cardSet3 {
+    background-color: #cc9966 !important;
+}
+
+
+
+/*
+   form styles
+*/
+#wizard {
+  top: 20px;
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+#wzd-content {
+  font-size: 20px;
+}
+
+.btn-wzd {
+  font-size: 2em;
+  color: #000;
+}
+
+.form-section {
+  position: absolute;
+  padding-right: 15px;
+  border-right: 2px solid #FF851B;
+  visibility:hidden;
+  opacity:0;
+  transition: opacity 1.75s ;
+   -moz-transition: opacity 1.75s ;
+   -webkit-transition: opacity 1.75s ;
+}
+.form-section.current {
+ position: relative;
+  visibility:visible;
+  opacity:1;
+  transition: opacity 1.75s ease-in-out;
+   -moz-transition: opacity 1.75s ease-in-out;
+   -webkit-transition: opacity 1.75s ease-in-out;
+}
+.btn-info, .btn-default {
+  margin-top: 10px;
+}
+html.codepen body {
+  margin: 1em;
+}
+.form-navigation{
+ transition: all 1.75s ease-in-out;
+   -moz-transition: all 1.75s ease-in-out;
+   -webkit-transition: all 1.75s ease-in-out;
+}
+
+.form-section label {
+    font-size: 1.5rem;
+}
+
+.form-section input {
+    font-size: 1.4rem;
+}
+
+
+
+
+
+

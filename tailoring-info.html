@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" class="codepen">
+
+<head>
+  <meta charset="UTF-8">
+  <title>فصل ثيابك على مزاجك</title>
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<link rel='stylesheet prefetch' href='https://rawgit.com/guillaumepotier/Parsley.js/2.2.0-rc4/doc/assets/docs.css'>
+<link rel='stylesheet prefetch' href='https://rawgit.com/guillaumepotier/Parsley.js/2.2.0-rc4/src/parsley.css'>
+<link rel="stylesheet" href="assets/theme/css/style.css">
+
+
+</head>
+
+<body>
+
+ <div class = "container mt-5">
+  <form class="demo-form">
+      <div class="form-section">
+        <div class="progress">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role = "progressbar" aria-value-now = "15%" aria-value-min = "0" aria-value-max = "100%" style = "width: 15%; font-size: 1.4rem;"></div>
+        </div><br>
+        <label for="firstname" class="float-right">الاسم الأول</label>
+        <input type="text" class="form-control" name="firstname" required="" id = "txtName">
+        <label for="lastname" class="float-right mt-3">الاسم الأخير</label>
+        <input type="text" class="form-control" name="lastname" required="">
+      </div>
+
+      <div class="form-section">
+        <label for="email" class="float-right  mt-3">البريد الإلكتروني</label>
+        <input type="email" class="form-control" name="email" required="">
+      </div>
+
+      <div class="form-section">
+
+      </div>
+
+      <div class="form-navigation">
+        <button type="button" class="previous btn btn-lg btn-info float-right">  &lt; السابق</button>
+        <button type="button" class="next btn btn-lg btn-info float-left"> التالي &gt; </button>
+        <input type="submit" class="btn btn-lg btn-default btn-danger float-left" value="إرسال">
+        <span class="clearfix"></span>
+      </div>
+  </form>
+ </div>
+
+<script src='http://code.jquery.com/jquery-2.1.3.js'></script>
+<script src='https://rawgit.com/guillaumepotier/Parsley.js/2.2.0-rc4/dist/parsley.js'></script>
+<script  src="assets/theme/js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
