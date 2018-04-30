@@ -1,3 +1,2 @@
 # clothing-project
-# clothing-project
 
