@@ -3,15 +3,15 @@
   document.getElementById("clickOnChild").addEventListener("click", function() {
         document.getElementById("children").style.display = "block";
         document.getElementById("youth").style.display = "none";
-        document.getElementById("clickOnChild").classList.add("active__userchoice");
-        document.getElementById("clickOnYouth").classList.remove("active__userchoice");
+        document.getElementById("clickOnChild").classList.remove("active__userchoice");
+        document.getElementById("clickOnYouth").classList.add("active__userchoice");
     });
 
 document.getElementById("clickOnYouth").addEventListener("click", function() {
         document.getElementById("children").style.display = "none";
         document.getElementById("youth").style.display = "block";
-        document.getElementById("clickOnChild").classList.remove("active__userchoice");
-        document.getElementById("clickOnYouth").classList.add("active__userchoice");
+        document.getElementById("clickOnChild").classList.add("active__userchoice");
+        document.getElementById("clickOnYouth").classList.remove("active__userchoice");
     });
 }
 })();

@@ -107,7 +107,7 @@ section {
 }
 
 .active__userchoice {
-    border: 5px #66b05c solid;
+    filter: blur(4px);
 }
 
 @keyframes moveInBottom {
